@@ -49,6 +49,7 @@ class Program
        // 3. Giảm số lượng phần tử thực tế đi 1 SAU KHI đã lấp xong dữ liệu
        count--;
      // Phương thức hỗ trợ in mảng hợp lệ ra màn hình
+    }
     static void PrintArray(int[] data, int count)
     {
         Console.Write("[ ");
@@ -97,7 +98,7 @@ class Program
         PrintArray(data, count);
 
         // 3. Ca kiểm thử các trường hợp ngoại lệ (Ném lỗi)
-        Console.WriteLine("\n--- CA KIỂM THỬ NGOẠI LỆ ---");
+        Console.WriteLine("CA KIỂM THỬ NGOẠI LỆ (THỬ NÉM LỖI)");
         try
         {
             Console.Write("Thử chèn chỉ số âm (index = -1): ");
@@ -130,5 +131,4 @@ class Program
             Console.WriteLine($"[Bắt lỗi thành công] {ex.Message}");
         }
     }
-}
 }
